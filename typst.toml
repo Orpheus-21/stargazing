@@ -1,0 +1,12 @@
+[package]
+name = "econometrics"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Orpheus-21"]
+license = "GPL-3.0-or-later"
+description = "Typeset regression tables from model results stored in JSON or CSV."
+repository = "https://github.com/Orpheus-21/typst-econometrics"
+keywords = ["econometrics", "regression", "table", "statistics"]
+categories = ["model"]
+disciplines = ["economics"]
+compiler = "0.15.1"
