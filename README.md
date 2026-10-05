@@ -1,4 +1,4 @@
-# econometrics
+# stargazing
 
 A Typst package that typesets regression tables from finished model results.
 
@@ -14,22 +14,13 @@ The package does not estimate models. You run the regressions in Python, R, or S
 
 ## Install
 
-The package is not on Typst Universe. Install it as a local package.
-
-1. Copy the repository folder to the Typst local package folder:
-
-```
-mkdir -p ~/.local/share/typst/packages/local/econometrics
-cp -r . ~/.local/share/typst/packages/local/econometrics/0.1.0
-```
-
-2. Import the package in your document:
+Import the package from Typst Universe in your document:
 
 ```typst
-#import "@local/econometrics:0.1.0": regression-table
+#import "@preview/stargazing:0.1.0": regression-table
 ```
 
-The path in step 1 is for Linux. Other systems use a different data folder. See the Typst documentation for the path.
+Typst downloads the package when it compiles the document.
 
 ## Usage
 
@@ -42,7 +33,7 @@ Call `regression-table` with an array of models. Each model is a dictionary with
 Example. The file `examples/results.json` holds the data for the table above.
 
 ```typst
-#import "@local/econometrics:0.1.0": regression-table
+#import "@preview/stargazing:0.1.0": regression-table
 
 #let data = json("results.json")
 
